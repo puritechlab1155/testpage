@@ -1,0 +1,23 @@
+<html>
+    <head>
+        <style>
+             body, html {
+                margin: 0;
+                padding: 0;
+            }
+            .image-container {
+                margin: 0 auto; /* Center the image if needed */
+            }
+        </style>
+    </head>
+    <body>
+        <div class="image-container">
+            <picture>
+                <source media="(max-width: 767px)" srcset="img/02_mobile.png">
+                <source media="(min-width: 768px)" srcset="img/01_web.png">
+                <img src="img/01_web.png" width="100%" alt="Responsive Image">
+                <img src="img/02_mobile.png" width="100%" alt="Responsive Image">
+            </picture>
+        </div>
+    </body>
+</html>
