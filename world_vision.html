@@ -1,12 +1,17 @@
 <html>
     <head>
         <style>
-             body, html {
+            body, html {
                 margin: 0;
                 padding: 0;
             }
             .image-container {
                 margin: 0 auto; /* Center the image if needed */
+                width: 100%;
+            }
+            .image-container img {
+                display: block; /* Remove default inline spacing */
+                width: 100%; /* Ensure the image takes up full width of the container */
             }
         </style>
     </head>
@@ -15,8 +20,7 @@
             <picture>
                 <source media="(max-width: 767px)" srcset="img/02_mobile.png">
                 <source media="(min-width: 768px)" srcset="img/01_web.png">
-                <img src="img/01_web.png" width="100%" alt="Responsive Image">
-                <img src="img/02_mobile.png" width="100%" alt="Responsive Image">
+                <img src="img/01_web.png" alt="Responsive Image">
             </picture>
         </div>
     </body>
