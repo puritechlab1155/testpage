@@ -1,17 +1,22 @@
 <html>
     <head>
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <style>
             body, html {
                 margin: 0;
                 padding: 0;
+                width: 100%;
+                height: 100%;
             }
             .image-container {
                 margin: 0 auto; /* Center the image if needed */
                 width: 100%;
+                max-width: 100%; /* Ensure it doesn't exceed the viewport */
             }
             .image-container img {
                 display: block; /* Remove default inline spacing */
                 width: 100%; /* Ensure the image takes up full width of the container */
+                height: auto; /* Maintain aspect ratio */
             }
         </style>
     </head>
